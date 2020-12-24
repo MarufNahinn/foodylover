@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+<script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<style>
+body{
+ background-image: url("bg3.jpg");
+ /* filter: blur(8px);*/
+ /* -webkit-filter: blur(8px);*/
+/*  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ background-color: red;*/
+
+}
+.lb-data .lb-details {
+    width: 100%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em;
+    text-align: justify;
+  }
+.light{
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+/*height: 100vh;*/
+font-family: 'bad Script', cursive;
+
+
+}
+
+h1 span
+{
+  justify-content: center;
+align-items: center;
+display: table-cell;
+margin: 0;
+padding: 0;
+animation: animate 2s linear infinite;
+}
+h1 span:nth-child(1)
+{
+  animation-delay: 0s;
+}
+h1 span:nth-child(2)
+{
+  animation-delay: 0.25s;
+}
+h1 span:nth-child(3)
+{
+  animation-delay: 0.50s;
+}
+h1 span:nth-child(4)
+{
+  animation-delay: 0.75s;
+}
+h1 span:nth-child(5)
+{
+  animation-delay: 1s;
+}
+h1 span:nth-child(6)
+{
+  animation-delay: 1.25s;
+}
+h1 span:nth-child(7)
+{
+  animation-delay: 1.50s;
+}
+h1 span:nth-child(8)
+{
+  animation-delay: 1.75s;
+}
+h1 span:nth-child(9)
+{
+  animation-delay: 2s;
+}
+h1 span:nth-child(10)
+{
+  animation-delay: 2.25s;
+}
+h1 span:nth-child(11)
+{
+  animation-delay: 2.50s;
+}
+h1 span:nth-child(12)
+{
+  animation-delay: 2.75s;
+}
+h1 span:nth-child(13)
+{
+  animation-delay: 3s;
+}
+h1 span:nth-child(14)
+{
+  animation-delay: 3.25s;
+}
+h1 span:nth-child(15)
+{
+  animation-delay: 3.50s;
+}
+h1 span:nth-child(16)
+{
+  animation-delay: 3.75s;
+}
+h1 span:nth-child(17)
+{
+  animation-delay: 4s;
+}
+h1 span:nth-child(18)
+{
+  animation-delay: 4.25s;
+}
+h1 span:nth-child(19)
+{
+  animation-delay: 4.50s;
+}
+h1 span:nth-child(20)
+{
+  animation-delay: 4.75s;
+}
+h1 span:nth-child(21)
+{
+  animation-delay: 5s;
+}
+h1 span:nth-child(22)
+{
+  animation-delay: 5.25s;
+}
+h1 span:nth-child(23)
+{
+  animation-delay: 5.50s;
+}
+h1 span:nth-child(24)
+{
+  animation-delay: 5.75s;
+}
+h1 span:nth-child(25)
+{
+  animation-delay: 6s;
+}
+
+@keyframes animate
+{
+  0%,100%
+  {
+    color: #000;
+    filter: blur(2px);
+    text-shadow:  0 0 10px #00b3ff,
+                0 0 20px #00b3ff, 
+                0 0 25px #00b3ff,
+                0 0 30px #00b3ff,
+                0 0 35px #00b3ff,
+                0 0 40px #00b3ff,
+                0 0 45px #00b3ff,
+                0 0 50px #00b3ff,
+                0 0 55px #00b3ff,
+                0 0 60px #00b3ff,
+                0 0 65px #00b3ff,
+                0 0 70px #00b3ff,
+                0 0 75px #00b3ff,
+                0 0 80px #00b3ff,
+                0 0 85px #00b3ff,
+                0 0 170px #00b3ff,
+                0 0 180px #00b3ff,
+                0 0 190px #00b3ff,
+                0 0 200px #00b3ff,
+                0 0 210px #00b3ff,
+                0 0 220px #00b3ff,   
+                0 0 230px #00b3ff,
+                0 0 240px #00b3ff,
+                0 0 250px #00b3ff,
+                0 0 260px #00b3ff;
+
+  }
+5%,95%
+{
+
+  color: #fff;
+  filter: blur(0px);
+  text-shadow: none;
+}
+
+}
+
+.footer{
+height: 300px;
+    position: relative;
+    background: #3434;
+
+}
+
+.footer .footer-content{
+
+height: 300px;
+
+}
+
+.footer .footer-bottom
+{
+  background: #343a40;
+  color: #000;
+  height: 50px;
+  text-align: center;
+position: absolute;
+bottom: 0px;
+width: 100%;
+left: 0px;
+padding-top: 20px;
+
+}
+.lb-data .lb-caption {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1em;
+}
+.social-icons a{
+ width:40px;
+ height:40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color:#e6e3e3;
+ margin:20px 10px;
+ border-radius:50%;
+}
+.social-icons{
+ display: flex;
+ 
+}
+.social-icons i,.social i{
+ color:#000000;
+}
+.social-icons a:hover{
+ background-color:#000000;
+ box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+ transition:all ease 0.5s;
+}
+.social-icons a:hover i,
+.social a:hover i{
+ color:#FFFFFF;
+ transition:all ease 0.5s;
+}
+ 
+.copyright{
+ color:#565555;
+ font-size: 12px;
+ position: absolute;
+ left:50%;
+ bottom:10px;
+ transform: translateX(-50%);
+}
+.social{
+ position: fixed;
+ top:50%;
+ right:0px;
+ transform:translateY(-50%);
+}
+.social a{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width:50px;
+ height:50px;
+ margin:0px;
+ padding: 0px;
+ line-height:0px;
+ background-color:#FFFFFF;
+ border:1px solid #CBCBCB;
+ box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+}
+.social a:hover{
+ background-color:#000000;
+ transition:all ease 0.5s;
+}
+.social i{
+ font-size:20px;
+ color:#2B2B2B;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="light" style="height: 19 0px;letter-spacing: 15px " >
+  <h1 style="color: #111; font-size: 70px;">
+    <span>W</span>
+    <span>e</span>
+    <span>l</span>
+    <span>c</span>
+    <span>o</span>
+    <span>m</span>
+    <span>e</span>
+    <span>M</span>
+    <span>y</span>
+    <span>F</span>
+    <span>o</span>
+    <span>o</span>
+    <span>d</span>
+    <span>l</span>
+    <span>o</span>
+    <span>v</span>
+    <span>e</span>
+    <span>r</span>
+    <span>s</span>
+    <span>.</span>
+    <span>.</span>
+    <span>.</span>
+    <span>!</span>
+    <span>!</span>
+    <span>!</span>
+  </h1>  
+</div>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">HOME</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1" style="font-size:21px; color: white;">Amazing Videos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2" style="font-size:21px; color: white;">FooD Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3" style="font-size:21px; color: white;">Food History</a>
+      </li>    
+      <li class="nav-item">
+        <a class="nav-link" href="#section4"style="font-size:21px; color: white;">Weird Food</a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#section5"style="font-size:21px; color: white;">Contact</a>
+      </li>
+    
+    </ul>
+  </div>  
+</nav>
+
+
+
+
+
+
+  <!-- SECTION HOME CONTENT -->
+    <div class="section" id="section0">
+            <div class="wrap">
+                <div class="box">
+<div class="container" style="margin-top:30px">
+  <div class="row">
+      <div class="col-sm-4">
+        <br>
+        <br>
+        <br>
+      <h2 style="color:#fff">About Me</h2>
+      <h5 style="color:#fff">Photo of me:</h5>
+      <div class="pic">
+        <img src="mn.JPG" width="350" height="250">
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Hi, i am maruf & this is my website. Here you can learn about so many delicious food. Hope you will enjoy </p>
+     
+      <hr class="d-sm-none">
+    </div>
+
+    <div class="col-sm-8">
+      <h2 style="font-size:40px; letter-spacing: 15px ">Hi Foodlovers</h2>
+      <br>
+      <p style="font-size:20px ">My Dear food lovers... Here I represent you Bangladeshi Food's name And their taste... On the other hand you will also learn about Bangladeshi Street food.</p>
+      <br>
+<!-- --------- BANGLADESHI FOOOD --------------- -->
+<div class="w3-content w3-section" style="max-width:500px">
+
+  <img class="mySlides w3-animate-top" src="bd/11.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-left" src="bd/12.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-right" src="bd/13.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-top" src="bd/14.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-top" src="bd/15.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-left" src="bd/16.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-right" src="bd/17.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-top" src="bd/18.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-top" src="bd/19.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-left" src="bd/fusska.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-right" src="bd/21.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-top" src="bd/22.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-top" src="bd/23.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-left" src="bd/24.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-right" src="bd/25.jpg" style="width:600px;height:360px;">
+  <img class="mySlides w3-animate-top" src="bd/26.jpg" style="width:600px;height:360px;">
+
+
+    </div>
+    <marquee behavior="slide" direction="left"><a href="https://nijhoom.com/top-bangladeshi-food/" style="text-decoration:none"><p>click to see <h2 style="text-decoration-line: underline;"><img src="finger.gif" style="width:50px;height:35px;">"Top 16 Bangladeshi Food" </h2> </p></a>
+</marquee>
+
+    </div>
+    </div>
+    </div>
+
+ <!-- END SECTION HOME CONTENT -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+  <div class="section" id="section1">
+            <div class="wrap">
+                <div class="box">
+                    <!-- SECTION FEATURES CONTENT -->
+                     <h2 style="font-size:40px; text-align: center; letter-spacing: 15px "><strong>Amazing</strong> Videos</h2>
+          <br>
+<br>          
+
+<div class="col-sm-4">
+                   <div class="fuk">
+<div class="w3-container w3-center w3-animate-left">
+  <h3> <i class="fa fa-heart" style="font-size:30px;color:red"></i> My Food lovers <i class="fa fa-heart" style="font-size:30px;color:red"></i> </h3>
+  <p>My dear food lovers... Here is some youtube Videos... You can learn about Bangladeshi Food's name And their taste... On the other hand you will also learn about Bangladeshi Street food,
+  indian food,Haydrababi biryani and 9 easiest way to make breakfast...!!!
+last but not the least you will learn about the street food of OLD DEHLI </p>
+<div class="ok">
+<img src="2.gif" alt="" style="height:270px; width:200px"/>
+</div>
+
+<div class="ko">
+<img src="3.gif" alt="" style="height:270px; width:200px"/>
+</div>
+
+<div class="koo">
+<img src="4.gif" alt="" style="height:270px; width:200px"/>
+</div>
+
+</div>
+</div>
+<hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8"> 
+<div class="fak">
+<iframe width="760" height="445" src="https://www.youtube.com/embed/videoseries?list=PLRCP1T_KTY3dxTzz--6_k9aIBP8vLQA9t" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+                    <!-- END SECTION FEATURES CONTENT -->
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- END SECTION FEATURES -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- ----------------------------gallery view photos....................................... -->
+ <div class="section" id="section2">
+     <div class="wrap">
+       <div class="box">
+                    <!-- SECTION FEATURES CONTENT -->
+                     <h2 style="font-size:40px; text-align: center; letter-spacing: 15px "><strong>FooD</strong> Gallery</h2>
+<p style="text-align: center;font-size: 20px;">Cooking is all about people. Food is maybe the only universal thing that really has the power to bring everyone together. <br>No matter what culture, everywhere around the world, people get together to eat.</p>
+
+          <br>
+          <br>          
+
+<!-- ..............indian food................. -->
+
+<marquee behavior="slide" direction="left"> <p style="font-size:25px">"Top 10 Indian food"</p></a>
+</marquee>
+
+
+
+<div class="gallery">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="india/chaat.png" data-lightbox="mygallery" data-title="Chaats -
+Chaat or chat (ISO: cāṭ; Hindi: चाट; Urdu: چاٹ; Punjabi: ਚਾਟ;Odia: ଚାଟ୍; Bengali: চাট) is a savoury snack that originated in India, typically served as an hors d'oeuvre at roadside tracks from stalls or food carts across the Indian subcontinent in India, Pakistan, Nepal, and Bangladesh."><img src="india/chaat.png" style="width:150px; height: 150px" ></a> 
+ &nbsp&nbsp&nbsp <a href="india/2.png" data-lightbox="mygallery" data-title="Rasgola -
+Rasgulla or Rosogolla (Bengali: রসগোল্লা) is an Indian syrupy dessert popular in the Indian subcontinent and regions with South Asian diaspora. It is made from ball-shaped dumplings of chhena and semolina dough, cooked in light syrup made of sugar. This is done until the syrup permeates the dumplings"><img src="india/2.png" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="india/dosa.png" data-lightbox="mygallery" data-title="Masala Dosa - 
+Masala dosa or masale dose or masaldosa is a variation of the popular South Indian dosa, which has its origins in Tuluva Mangalorean cuisine of Tulunadu. It is made from rice, lentils, potato, methi, and curry leaves, and served with chutneys and sambar."> <img src="india/dosa.png" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="india/biryani.png" data-lightbox="mygallery" data-title="Biryani - 
+Biryani is a mixed rice dish with its origins among the Muslims of India. It can be compared to mixing a curry, later combining it with semi-cooked rice separately. This dish is especially popular throughout the Indian subcontinent, as well as among its diaspora."> <img src="india/biryani.png" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="india/5.jpg" data-lightbox="mygallery" data-title="Chole Bhatura - 
+Chole bhature is a food dish originating from northern India. However, in Pakistan, Rawalpindi Chole Bhature is very popular, it is a combination of chana masala and bhatura/Puri, a fried bread made from maida. There is a distinct Punjabi variant of the dish."> <img src="india/5.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="india/palak.png" data-lightbox="mygallery" data-title="Paalak Paneer - 
+Palak paneer is a vegetarian dish originating from the Indian subcontinent, consisting of paneer in a thick paste made from puréed spinach and spiced with ginger, garlic, tomatoes, garam masala, turmeric, chili powder and cumin"> <img src="india/palak.png" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="india/somusa.png" data-lightbox="mygallery" data-title="Samosa - 
+A samosa is a fried or baked pastry with a savoury filling, such as spiced potatoes, onions, peas, cheese, beef and other meats, or lentils. It may take different forms, including triangular, cone, or half-moon shapes, depending on the region."> <img src="india/somusa.png" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="india/8.png" data-lightbox="mygallery" data-title="Stuffed Paratha - 
+Parathas are one of the most popular unleavened flatbreads in the Indian Subcontinent, made by baking or cooking whole wheat dough on a tava, and finishing off with shallow frying.[9] Parathas are thicker and more substantial than chapatis/rotis and this is either because, in the case of a plain paratha, they have been layered by coating with ghee or oil and folding repeatedly (much like the method used for puff pastry or some types of Turkish börek) using a laminated dough technique; or else because food ingredients such as mixed vegetables have been mixed in with the dough, such as potato or cauliflower, green beans, and carrots."> <img src="india/8.png" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="india/9.png" data-lightbox="mygallery" data-title="Dam Alu - 
+Dum Aloo or Aloor Dum is a potato based dish, it is a part of the traditional Kashmiri Pandit cuisine, from the Kashmir Valley, in the Indian state of Jammu and Kashmir. The potatoes, usually smaller ones, are first deep fried, then cooked slowly at low flame in a gravy with spices."> <img src="india/9.png" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="india/10.png" data-lightbox="mygallery" data-title="Thali - 
+Thali refers to the metal plate that a thali meal may be served on. Thali is popular in Punjab , Uttar Pradesh and other states in North India. The idea behind a thali is to offer all the 6 different flavours of sweet, salt, bitter, sour, astringent and spicy on one single plate (technically the last two are actually forms of chemesthesis rather than true flavours). According to Indian food custom, a proper meal should be a perfect balance of all these six flavours"><img src="india/10.png" style="width:150px; height: 150px" ></a> 
+</div>
+
+
+<!-- .........pakistani food............. -->
+
+<marquee behavior="slide" direction="left"> <p style="font-size:25px">"Top 10 Pakistani food"</p></a>
+</marquee>
+
+
+
+<div class="gallery" >
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="pa/ek.jpg"  data-lightbox="mygallery" data-title="Seeji, Seiji & Dum Pukht - Seeji or Saji and Dumpakht are two very special Baluchi cuisine food types that have become very famous all over the country. This food type is made out after skewing a whole lamb that sure makes it unique and very scrumptious for all. Dampukht, is also made from meat but it’s cooking surely  involves a lot of fats that are not that healthy for your body. (Pakistan)"><img src="pa/ek.jpg" style="width:150px; height: 150px" ></a> 
+ &nbsp&nbsp&nbsp <a href="pa/halimm.jpg" data-lightbox="mygallery" data-title="Karachi Kuzi Haleem - This types of food, Haleem and Hareesa, involve many of food ingredients like lentils, rice, meat or maze, but the amalgam of this kind of product, surely is very very tasty in the form of Haleem or hareesa. They are served, most of the time with Naan."><img src="pa/halimm.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="pa/halwaa.jpg" data-lightbox="mygallery" data-title="HalwaPuri - HalwaPuri is a special type of breakfast food type in Pakistan. It is normally originated from Punjab but it is famous all over the world for the very good taste and for it’s eye catching color. Halwa is a sweet but very popular dish that involves Suji, which is a kind of flour and sugar mostly, while Puri is made out of gram flour that is then deep fried in the oil."> <img src="pa/halwaa.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="pa/kababb.jpg" data-lightbox="mygallery" data-title="Kebabs/Naan- Naan Kebabs are not really dishes but are kind of essential adds to a Pakistani dining table. The kebab, is made from minced meat and naan with flour dough and there is a very wide variety of kebabs in Pakistan like, Tikka Kabab, Shami Kabab, Seekh Kabab, Gola Kabab and many more other types. Naan has many forms too, like Aloo Nan, Roghni Nan, Keema Nan and the list can grow pretty fast."> <img src="pa/kababb.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="pa/polaoo.jpg" data-lightbox="mygallery" data-title="Biryani and Pulao - Biryani and Pakistani foods are straight joined. No Pakistani dining experience is finished without its vicinity. It is essentially a South Indian dish yet it turned into a crushing hit in Pakistan for individuals here are wild about it. It is produced from rice and meat of any sort. Biryani took numerous structures and shapes and even formula varieties here, for example Mutton Biryani, Sindhi Biryani, Tikka Biryani, Aalo Biryani and so forth. Thus, Pulao comes second after it. It has numerous structures and strategies for cooking on account of the variety of society and contrasts of zones."> <img src="pa/polaoo.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="pa/lacchii.png" data-lightbox="mygallery" data-title="Lassi (Yogurt Drink) - This well known drink might be appreciated sweet or salty. Pakistanis normally drink lassi sweet for breakfast, or salty for lunch or supper. Pakistanis might like such sweets as kheer (rice puding) or kulfi(pistachio dessert). Some sweet shops might offer jalebi, which are pan fried orange “pretzels” made with flour, yogurt, and sugar, and barfi, produced out of dried milk solids. Offering sweets to each one in turn to celebrate cheerful occasions is a well known Pakistani custom."> <img src="pa/lacchii.png" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="pa/saladd.jpg" data-lightbox="mygallery" data-title="Raita (Yogurt and Vegetable Salad) - Raira is sort of like a very good salad dressing that is used usually with spicy foods as a way to cool them a bit down. There are a few raita recipes that vary from “simple raita” to “complex raita”, but usually simple raita is served when having a normal family dinner and the fancier one is served when guests come over. Or you could simply eat someone out and order any type of raita that you like."> <img src="pa/saladd.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="pa/chicken.jpg" data-lightbox="mygallery" data-title="Chicken Karahi - The individuals who can afford, consume meats, for example sheep, poultry, and here and there gaye ka gosht (hamburger). There are various ways meat is ready in Pakistan. Karahi is a system where the meat is cooked with vegetables and served in its own particular container. Jalfrezi is meat blend singed with tomatoes, egg, and chilies. Tikka and bhoti kebab both allude to meat barbecued on a spit (a thin bar or stick) over an open fire."> <img src="pa/chicken.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="pa/nastaa.jpg" data-lightbox="mygallery" data-title="Nashta - An average Pakistani breakfast, generally called nāshtā , comprises of eggs (boiled/scrambled/fried/omelette), a cut of chunk bread or roti, parathas, sheermal with tea or lassi, qeema (minced meat), new regular foods grown from the ground (mangoes, fruits, melons, bananas and so on.), milk, nectar, margarine, jam, shami kebab, or nuts. Once in a while breakfast incorporates prepared merchandise like bakarkhani and rusks."> <img src="pa/nastaa.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="pa/dall.jpg" data-lightbox="mygallery" data-title="Dhal (Lentil Stew) - A mixture of flavors (an Indian impact, for example stew powder, curry, ginger, garlic, coriander, paprika, and cinnamon, are at the heart of Pakistani food. An extensive variety of chutneys (a relish normally made of foods grown from the ground, flavors, and herbs), pickles, and jam that go with meats and vegetables give Pakistani cooking its different flavor. Dhal is made from lentils. There are several varieties of lentils that can be red, green or brown and they are all are used by South Asian (Pakistani and Indian) cooks."><img src="pa/dall.jpg" style="width:150px; height: 150px" ></a> 
+</div>
+
+
+<!-- .........Srilankan food............. -->
+
+<marquee behavior="slide" direction="left"> <p style="font-size:25px">"Top 10 Srilankan food"</p></a>
+</marquee>
+
+
+
+<div class="gallery">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="sri/fishcurry.jpg" data-lightbox="mygallery" data-title="Fish ambul thiyal (sour fish curry) - Ambul thiyal is a dry curry dish, meaning all the ingredients are simmered with a small amount of water and cooked until the liquid reduces. This allows the spice mixture to coat each cube of fish.
+Originating in southern Sri Lanka, it's available throughout the country at restaurants that serve curry, and is best eaten with rice. (Srilanka)"><img src="sri/fishcurry.jpg" style="width:150px; height: 150px" ></a> 
+ &nbsp&nbsp&nbsp <a href="sri/kottu.jpg" data-lightbox="mygallery" data-title="Kottu (also, kottu roti) - The roti is normally fried at the beginning of the day, piled into stacks and served as it's ordered. When you place an order, the kottu chef will fry and chop the roti with a selection of ingredients you choose. The result is a tasty mixture of salty pieces of fried dough, lightly spiced and extremely comforting.
+Kottu is served with spicy curry sauce, which you can either use as a dip or pour over your entire plate."><img src="sri/kottu.jpg" style="width:150px; height: 150px" ></a> 
+
+&nbsp&nbsp&nbsp <a href="sri/kukull.jpg" data-lightbox="mygallery" data-title="Kukul mas curry (chicken curry) - Spices like fennel seeds, cardamom, cloves and cinnamon sticks are tempered in hot oil before being combined with chicken and spices like chili powder, curry powder, turmeric, pandan leaves, lemongrass and curry leaves.
+Coconut milk contributes to the rich base of the curry gravy. Depending on the recipe, a puree of tomato is often included.
+The chicken is stewed for an hour or so until the essence of the spices is infused into the chicken. Most satisfying when served with hot rice and roti."> <img src="sri/kukull.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="sri/dall.jpg" data-lightbox="mygallery" data-title="Parippu (dhal curry) - Parippu, or dhal curry, is the most common curry in all of Sri Lankan cuisine, a staple in any restaurant or household. Masoor dhal (split red lentils) are first rinsed and boiled until soft.
+In a separate pan, a number of fresh ingredients, such as onions, tomatoes and fresh green chilies, are sauteed and mixed with tempered spices like cumin seeds, turmeric, fenugreek, mustard seeds and curry leaves.
+All the ingredients are combined and usually thickened with a splash of fresh coconut milk to give the dhal a rich flavor and creamy texture."> <img src="sri/dall.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="sri/lamparis.jpg" data-lightbox="mygallery" data-title="Lamprais - Lamprais, a word that combines the two Dutch words for 'lump' and 'rice', is a combination of meat, rice and sambol chili sauce, wrapped into a banana leaf packet and steamed. The rice is cooked with meat stock -- usually a combination of different meats like beef, pork or lamb -- that's infused with cardamom, clove and cinnamon.
+A scoop of rice is placed in the center of a banana leaf, along with the mixed meat curry, two frikkadels (Dutch-style beef balls), blachan (a shrimp paste) and a starch or vegetable, usually either ash plantain or brinjals."> <img src="sri/lamparis.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="sri/dui.jpg" data-lightbox="mygallery" data-title="Hoppers (appa or appam) - A ladle of batter is fried in a small wok and swirled around to even it out. Hoppers can be sweet or savory, but one of the local favorites is egg hoppers. An egg is cracked into the bowl-shaped pancake, creating the Sri Lankan version of an 'egg in the hole'.
+Egg hoppers are garnished with lunu miris, a sambol of onions, chilies, lemon juice and salt."> <img src="sri/dui.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="sri/jackcurry.jpg" data-lightbox="mygallery" data-title="Polos (green jackfruit curry) - The fruit is sliced into bite-sized chunks and boiled until soft.
+It's then cooked with onions, garlic, ginger and spices like mustard seeds, turmeric, chili powder, roasted curry powder, pandan leaves and curry leaf sprigs. The final step is to add coconut milk and simmer to reduce most of the liquid, leaving all the beautiful flavors within the cubes of jackfruit."> <img src="sri/jackcurry.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="sri/coconat.jpg" data-lightbox="mygallery" data-title="Pol Sambol (coconut relish) - Pol sambol, which might also be called fresh coconut relish, is a simple blend of finely grated coconut, red onions, dried whole chilies or chili powder, lime juice, salt and Maldive fish (if available). The ingredients are diced or ground, then combined in a bowl.
+In Sri Lanka, pol sambol is used as a garnish or side dish for everything and anything.
+It goes well with rice and curry, pol roti (coconut roti), a hot paratha, string hoppers or even just scooped up with slices of bread. If you love coconut, there's no better garnish in the world"> <img src="sri/coconat.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="sri/wood.jpg" data-lightbox="mygallery" data-title="Wood apple - Walking through a market in Sri Lanka your nose will detect it long before your eyes do. Inside the shell is a dark brown paste that resembles something between tamarind pulp and fermented raisins.
+Wood apple can be eaten directly out of the shell, but one of the most popular ways to eat (or drink) it throughout Sri Lanka is in a thick smoothie, known as wood apple juice.
+The fruit is blended with jaggery (or sugar) and water to smooth it out. It has a unique sour and sweet flavor. Mention that you love wood apple to any Sri Lankan you meet, and they probably won't be able to hold back a knowing smile."> <img src="sri/wood.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="sri/kolaa.jpg" data-lightbox="mygallery" data-title="Gotu kola sambol (pennywort salad) - Gotu kola (known in English as Asiatic pennywort) is a medicinal herb in Asia. It's shredded into slivers, then combined with shallots, tomatoes, fresh grated coconut and chili and seasoned with a dressing of salt, pepper and lemon juice.
+Sambol is a term used in Sri Lanka for ingredients that are combined and eaten raw, sometimes more of a chili sauce and sometimes more of a salad, like gotu kola sambol.
+Gotu kola has a powerful, herbaceous flavor similar to kale, making it an extremely fresh and crisp dish. It's typically a side dish served with curry and rice."><img src="sri/kolaa.jpg" style="width:150px; height: 150px" ></a> 
+</div>
+
+
+<!-- .......... Soudiarabian Food ......... -->
+
+<marquee behavior="slide" direction="left"> <p style="font-size:25px">"Top 10 Saudi Arabian  food"</p></a>
+</marquee>
+
+
+
+<div class="gallery">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="soudi/khabsaa.jpg" data-lightbox="mygallery" data-title="Kabsa(The National Dish) - Kabsa is a rice dish that is enjoyed throughout the Gulf States of the Arabian Peninsula. Heavily influenced by Persian and Indian biryanis, kabsa makes use of the water that was used to cook fish or meat and re-using it to cook the spiced, long-grain rice in it, perfectly blending all the flavors and spices.
+The dish can be made with chicken, lamb, camel meat, fish, or even shrimps. The meat or fish is usually placed on top of the rice, and the whole dish is served on a large platter, meant to be shared and eaten by hands."><img src="soudi/khabsaa.jpg" style="width:150px; height: 150px" ></a> 
+ &nbsp&nbsp&nbsp <a href="soudi/tharid.jpg" data-lightbox="mygallery" data-title="Tharid(A Traditional Meal) - This traditional Arabian dish is most often described as a spicy lamb stew thickened with barley bread, though the word tharīd also refers to a large earthenware bowl. According to legend and several Hadith teachings, tharīd was one of the Prophet Muhammad’s favorite dishes, even though its origins are said to date back to the pre-Islamic times.
+Today, this satisfying dish is prepared with a variety of halāl meats which are stewed with vegetables and ladled over thin, unleavened bread. In Islamic countries, tharīd is typically enjoyed for al'iiftar, the evening meal served at sunset when Muslims end their daily Ramadan fast."><img src="soudi/tharid.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="soudi/sambusak.jpg" data-lightbox="mygallery" data-title="(Sambusak – A Vegetarian Snack) - Arabian Sambusak is one of the most popular and elegant appetizers or snacks liked during the rainy season. Or on teatimes and especially during the Holy month of Ramadan- in all over the arab world, Pakistan and India. Sambusak is a scrumptious snack. The most common kind is the one filled with browned minced meat,but you can fill it with boiled potatoes, spinach cheese mixes, chicken, veggies and also with dates as they do so in Gulf Countries."> <img src="soudi/sambusak.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="soudi/shakshouka.jpg" data-lightbox="mygallery" data-title="(Shakshouka – A Must in Breakfast) - Make a healthy lifestyle a conscious meals with Puck's range of products. Save time with Pucks delicious products - We have exactly what you need. Nutritious dairy. Delicious taste. European standards. Quality ingredients. Brands: Puck Spreadable, Puck Labneh, Puck Kids."> <img src="soudi/shakshouka.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="soudi/Falafel.jpg" data-lightbox="mygallery" data-title="(Falafel) - This is a deep-fried ball or patty made from ground chickpeas, fava beans, or both. Falafel is a traditional Middle Eastern food, commonly served in a pita, which acts as a pocket, or wrapped in a flatbread known as taboon; falafel also frequently refers to a wrapped sandwich that is prepared in this way. The falafel balls are topped with salads, pickled vegetables, hot sauce, and drizzled with tahini-based sauces. Falafel balls may also be eaten alone as a snack or served as part of a meze tray (assortment of appetizers).
+
+Falafel is a common dish eaten throughout the Middle East."> <img src="soudi/Falafel.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="soudi/murtabak.jpg" data-lightbox="mygallery" data-title="(Murtabak – The Popular Nibble Option) - Mutabbaq also called as Murtabak is a very famous street food of middle east specially Saudi Arabia. The word Mutabbaq word is derived from the word Mutabbag which means folded in Arabic. The main ingredients of this dish is minced meat, eggs and spring onions though you may add other greens if you wish to eat"> <img src="soudi/murtabak.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="soudi/jallab.jpg" data-lightbox="mygallery" data-title="(Jallab – A Famous Beverage) - This is a type of fruit syrup popular in the Middle East made from carob, dates, grape molasses and rose water.Jallab is very popular in Jordan, Syria, Palestine and Lebanon. It is made mainly of grape molasses, grenadine syrup, and rose water, then smoked with Arabic incense. It is usually sold with crushed ice and floating pine nuts and raisins."> <img src="soudi/jallab.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="soudi/basbousa.jpg" data-lightbox="mygallery" data-title="(Basbousa – The Middle-eastern Desert) - Basbousa (also namoura, revani, hareseh and other names) is a traditional Middle Eastern sweet cake that originated in Egypt, although it is also popular in other countries. It is made from a semolina batter and cooked in a pan,then sweetened with orange flower water, rose water or simple syrup, and typically cut into diamond shapes. It is found in most former areas of the Ottoman Empire, and is featured in Middle Eastern cuisines, Greek cuisine, Azerbaijani cuisine, Turkish cuisine, and many others.
+
+"> <img src="soudi/basbousa.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="soudi/muhallebi.jpg" data-lightbox="mygallery" data-title="(Muhallebi – Their Favorite Item) - This is a milk pudding that has legendary origins dating to Sassanid Persia (224-651).The basic ingredients are rice, sugar, rice flour and milk. The dessert is popular in Turkey, Israel, and other Mediterranean countries.
+In the Middle Ages, muhallebi and its European counterpart blancmange were made with shredded chicken. The traditional recipe is still common in Turkey.Legend has it that muhallebi was introduced into Arab cuisine in the late seventh century by a Persian cook who served it to an Arab general by the name of Al-Muhallab ibn Abi Sufra. He liked it so much, he named it after himself. The earliest recipes, dating to the 10th century, featured three versions: milk thickened with ground rice, milk with rice grains and chicken, and an egg custard without rice."> <img src="soudi/muhallebi.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="soudi/Labneh.jpg" data-lightbox="mygallery" data-title="(Labneh) - Tangy, thick, and creamy, labneh (also known as labnah or labne) is basically yogurt cheese. Just like Greek yogurt, it is made by straining yogurt until it loses most of its liquid. If you think of Greek yogurt as strained yogurt, labneh is extra strained  yogurt.Labneh making is simple. You need natural goat’s milk yogurt, or quality full-fat cow’s milk yogurt, and a little salt. Stir the salt into the yogurt, place it into a muslin or linen cloth and hang from the kitchen faucet. Let time do the hard work.
+
+After several hours, the whey strains out, leaving you with a delightfully thick spreadable cheese."><img src="soudi/Labneh.jpg" style="width:150px; height: 150px" ></a> 
+</div>
+
+
+<!-- .......... Nepali Food ......... -->
+
+<marquee behavior="slide" direction="left"> <p style="font-size:25px">"Top 10 Nepali food "</p></a>
+</marquee>
+
+
+
+<div class="gallery">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="ne/selroti.jpg" data-lightbox="mygallery" data-title="(Sel Roti) -  is a traditional homemade ring-shaped rice bread originating from Nepal which is sweet in taste. It is mostly prepared during Dashain and Tihar, widely celebrated Hindu festivals in Nepal and Sikkim and Darjeeling regions in India where ethnic Nepalese people have presence."><img src="ne/selroti.jpg" style="width:150px; height: 150px" ></a> 
+ &nbsp&nbsp&nbsp <a href="ne/gundruk.jpg" data-lightbox="mygallery" data-title="(Gundruk) - Gundruk (Nepali: गुन्द्रुक pronounced [ɡund̪ruk] ( listen)) is a fermented leafy green vegetable and a popular food in Nepal, and it is claimed to be one of the national dishes. It is popular not only in Nepal but also in Gorkhali or Nepalese diaspora households worldwide."><img src="ne/gundruk.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="ne/yomori.jpg" data-lightbox="mygallery" data-title="(Yomari) - Yomari is a flavorful Nepalese rice flour dumpling stuffed with molasses. It is prepared in a triangular (or teardrop) shape which is then steamed and served hot. The dessert is especially popular during the month of Poush. The name of the dish is derived from the words ya, meaning to like, and mari, meaning delicacy."> <img src="ne/yomori.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="ne/tongba.jpg" data-lightbox="mygallery" data-title="(Tongba) - Tongba (Nepali: तोङबा pronounced [toŋba]) is a millet-based alcoholic beverage found in the eastern mountainous region of Nepal and the neighbouring Darjeeling and Sikkim. ... Offering Tongba is a symbol of respect to a guest among the Limbu people and also an important drink for special occasions and festivals."> <img src="ne/tongba.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="ne/CHATAMARI.jpg" data-lightbox="mygallery" data-title="(CHATAMARI - Nepali Pizza) - Chatamari is a Nepalese rice flour bread topped with eggs, cheese, meat, or vegetables, which is the reason why it is often called Nepali pizza. The dish is a specialty of the Newars living in the Kathmandu Valley. It can be served as an appetizer, a snack, or as the main dish.Chatānmari is a kind of rice crepe. It is a traditional specialty of the Newars of the Kathmandu Valley in Nepal and is eaten during festivals and other special occasions. Chatānmari is now widely eaten as a snack and has become popular among other cultures, too"> <img src="ne/CHATAMARI.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="ne/Wo.jpg" data-lightbox="mygallery" data-title="(Wo – Newari Pancakes) - English: Wo, also called Baara, are small pancakes made from ground lentil paste, usually black lentils (split Urad dal). It is consumed during festivals, most notably during the Newari festival of Sithi Nakha when Lord Kartik is worshipped."> <img src="ne/Wo.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="ne/choila.jpg" data-lightbox="mygallery" data-title="(Choila) - Choila is a specialty of the Nepalese Newari, and it consists of grilled meat - either water buffalo, chicken, or mutton. The dish is characterized by its spiciness coming from green and red chilis, along with spices such as turmeric and fenugreek seeds. It is usually served with a side dish of pounded rice.Chhwela is a typical Newari dish that consists of spiced grilled buffalo meat. Though the dish is traditionally popular with water buffalo meat, nowadays mutton, chicken, duck meat and mushroom are also being used. Usually eaten with rice flakes, this dish is typically very spicy, hot and mouth watering."> <img src="ne/choila.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="ne/thukpa.jpg" data-lightbox="mygallery" data-title="(Thukpa) - Thukpa is a Tibetan noodle soup, which originated in the eastern part of Tibet. Amdo thukpa is a famous variant among Tibetan people and Himalayan people of Nepal. The dish is also consumed in the region of Uttarakhand, Sikkim, Darjeeling, Kalimpong and Arunachal Pradesh in India."> <img src="ne/thukpa.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="ne/samyabhaji.jpg" data-lightbox="mygallery" data-title="(Dal Bhat) - Dal bhat is a traditional meal from the Indian subcontinent, popular in many areas of India, Bangladesh and Nepal. It consists of steamed rice and a cooked lentil soup called dal. It is a staple food in these countries. Bhat or Chawal means boiled rice in a number of Indo-Aryan languages. "> <img src="ne/samyabhaji.jpg" style="width:150px; height: 150px" ></a>
+&nbsp&nbsp&nbsp <a href="ne/GorkhaliLamb.jpg" data-lightbox="mygallery" data-title="(Gorkhali Lamb) - Grill the marinated lamb chops on a charcoal grill, occasionally turning until cooked through, about 5-7 minute. Cut grilled lamb into 1-in cubes. In a sauce pan heat 2 tablespoons of musturd oil. Fry fenugreek, bay leaves, and dry whole red peppers till dark. Add turmeric and stir for 15 sec."><img src="ne/GorkhaliLamb.jpg" style="width:150px; height: 150px" ></a> 
+</div>
+
+<!-- .......... China Food ......... -->
+
+<marquee behavior="slide" direction="left"> <p style="font-size:25px">"Top 10 Chinese food "</p></a>
+</marquee>
+
+
+
+<div class="gallery">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="china/hotpot.jpg" data-lightbox="mygallery" data-title="(HotPot) - Hot pot or hotpot (simplified Chinese: 火锅; traditional Chinese: 火鍋; pinyin: huǒguō; lit. 'fire pot'), also known as soup-food or steamboat, is a Chinese cooking method, prepared with a simmering pot of soup stock at the dining table, containing a variety of East Asian foodstuffs and ingredients. Hot pot or hotpot, also known as soup-food or steamboat, is a Chinese cooking method, prepared with a simmering pot of soup stock at the dining table, containing a variety of East Asian foodstuffs and ingredients"><img src="china/hotpot.jpg" style="width:150px; height: 150px" ></a> 
+ &nbsp&nbsp&nbsp <a href="china/Sichuanpork.jpg" data-lightbox="mygallery" data-title="(Sichuan Pork) - The Chinese name of this dish is “蒜(suàn)泥(ní)白(bái)肉(ròu)”; literally mean pork slices in garlic sauce. In Sichuan area, restaurants usually use the hind leg meat. But it is ok to use pork belly or other part as long as there are both lean meat and fat."><img src="china/Sichuanpork.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="china/pork.jpg" data-lightbox="mygallery" data-title="(Braised Pork Balls in Gravy) - Braised Pork Ball in Brown Sauce is a famous Huaiyang cuisine. The meatball is soft and delicious. The meat should be minced to the rice size, and according to the ratio, 3 fat meat: 7 lean meat. It shouldn’t be minced too fine, there must have gaps in order to contain juice. However, if time is limited, it could be instead by mince. Another important point is to use a clay pot for the best on the container.In the north of China, it is named si xi wan zi. It is a famous traditional Chinese dish belonging to Shandong cuisine. It consists of four meatballs, which stands for happiness, good fortune, longevity, and good luck, and are often used in the banquets such as wedding banquets and birthday banquets. The cooking way is basically the same as that of the hong shao si zi tou, except that it is limited to four meatballs. The main ingredients are pork mince, eggs, chopped green onions, etc."> <img src="china/pork.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="china/Dumplings.jpg" data-lightbox="mygallery" data-title="(Dumplings) - Dumplings are a famous traditional northern Chinese food. They are half-moon-shaped, soft, stuffed pasta - like ravioli. Dumplings are named according to their various fillings and cooking methods (fried, heated in boiling water, or steamed).
+"> <img src="china/Dumplings.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="china/Chow Mein.jpg" data-lightbox="mygallery" data-title="(Chow Mein) - Chow mein (/ˈtʃaʊ ˈmeɪn/and /ˈtʃaʊ ˈmiːn/, simplified Chinese: 炒面; traditional Chinese: 炒麵; Pinyin: chǎomiàn) are Chinese stir-fried noodles with vegetables and sometimes meat or tofu; the name is a romanization of the Taishanese chāu-mèn.Chow mein are Chinese stir-fried noodles with vegetables and sometimes meat or tofu; the name is a romanization of the Taishanese chāu-mèn. The dish is popular throughout the Chinese diaspora and appears on the menus of most Chinese restaurants abroad. It is particularly popular in India, Nepal, the UK, and the US."> <img src="china/Chow Mein.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="china/Peking Roasted Duck.jpg" data-lightbox="mygallery" data-title="(Peking Roasted Duck) - Peking duck is an iconic Beijing dish, consisting of thin pieces of tender, roasted duck meat and crispy skin wrapped in a thin crepe, along with sliced spring onions, cucumbers, and hoisin sauce or sweet bean sauce. Read on to learn more about the long history of this centuries-old imperial dish.Peking duck is a dish from Beijing that has been prepared since the imperial era. The meat is characterized by its thin, crisp skin, with authentic versions of the dish serving mostly the skin and little meat, sliced in front of the diners by the cook."> <img src="china/Peking Roasted Duck.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="china/Steamed Vermicelli Rolls.png" data-lightbox="mygallery" data-title="(Steamed Vermicelli Rolls) - Fried rice noodle rolls are fried after they are steamed, then sprinkled with sesame seeds. Popular fillings include beef, dough fritter, shrimp and barbequed pork. Often topped with soy sauce. Founded in 1950s, Yin Ji Restaurant is chain enterprise serving for rice flour rolls and congee."> <img src="china/Steamed Vermicelli Rolls.png" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="china/Ma Po Tofu.jpg" data-lightbox="mygallery" data-title="(Ma Po Tofu) - Mapo tofu is a popular Chinese dish from Sichuan province. It consists of tofu set in a spicy sauce, typically a thin, oily, and bright red suspension, based on douban and douchi, along with minced meat, traditionally beef."> <img src="china/Ma Po Tofu.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="china/ramen.jpg" data-lightbox="mygallery" data-title="(Ramen) - According to the record of the Yokohama Ramen Museum, ramen originated in China and made its way over to Japan in 1859. Early versions were wheat noodles in broth topped with Chinese-style roast pork.Ramen is widely known imported from China to Japan, ramen-noodle shops first sprang to popularity in both countries in the early 1900s, and the noodles were actually called “Chinese soba” noodes in Japan up until the 1950s. A large number of overseas Chinese to settle in the three major ports – Yokohama, Kobe, and Nagasaki, thus forming Chinatown and provides a cheap and quickly choice for the poor working class. It was Chinese workers selling meals from food carts who likely first introduced the Japanese to the wheat-based noodles."> <img src="china/ramen.jpg" style="width:150px; height: 150px" ></a> 
+&nbsp&nbsp&nbsp <a href="china/Fried Shrimp with Cashew Nuts.jpg" data-lightbox="mygallery" data-title="(Fried Shrimp with Cashew Nuts) - In a small bowl, mix together the soy sauce, rice wine vinegar, brown sugar, oyster sauce, and sesame oil. Heat the vegetable oil in a wok or large skillet over high heat and add the shrimp and stir fry until pink (about 2 minutes). Using the same pan, add in the garlic and ginger and stir to combine."><img src="china/Fried Shrimp with Cashew Nuts.jpg" style="width:150px; height: 150px" ></a> 
+</div>
+
+
+ </div>
+            </div>
+        </div>
+
+
+      
+ <!-- ----------------------------END gallery view photos....................................... -->
+
+
+
+<!-- ----------------------------Origin of FOOD around the WORLD....................................... -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="section" id="section3">
+     <div class="wrap">
+       <div class="box">
+  <h3 style="font-size:40px; text-align: center; letter-spacing: 5px "><strong>Origin of FOOD</strong> around the WORLD</h3>
+  <br>
+<p style="font-size:20px; text-align: center;">Here i represent you the origin of some famouse food around the world.Most of the food we eat comes from NATURE.<br>We can get food from animals, vegetables, fruits or the plants that the land provides us with, as well as minerals.
+</p>
+<div class="double" style="border:5px inset #28c9ac; width: 1700px; height: 550px;">
+ &nbsp&nbsp&nbsp<h3 style="font-size:40px; margin-left:25px;" letter-spacing: 2px >Origin of Biryani</h3>
+  <div style="width:870px; height: 350px ">  &nbsp&nbsp&nbsp  
+    <p style="font-size:23px; margin-left:25px; text-align: justify;" >The exact origin of the dish is uncertain. In North India, different varieties of biryani developed in the Muslim centers of Delhi (Mughlai cuisine), Lucknow (Awadhi cuisine) and other small principalities. In South India, where rice is more widely used as a staple food, several distinct varieties of biryani emerged from Hyderabad Deccan (where some believe the dish originated) as well as Tamil Nadu (Ambur, Thanjavur, Chettinad, Salem, Dindigal), Kerala (Malabar), Andhra Pradesh, and Karnataka, where Muslim communities were present.</p>
+  </div>
+  
+     
+
+
+<div class="faak">
+  <iframe width="760" height="445" style="margin-left:900px; margin-top: -380px " src="https://www.youtube.com/embed/rdooig2-OHg" frameborder="5px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</div>
+
+<div class="double" style="border:5px inset #28c9ac; width: 1700px; height: 550px;">
+ &nbsp&nbsp&nbsp<h3 style="font-size:40px; margin-left:25px;" letter-spacing: 2px >Origin of Alcohol</h3>
+  <div style="width:870px; height: 350px ">  &nbsp&nbsp&nbsp  
+    <p style="font-size:23px; margin-left:25px; text-align: justify;" >Fermented grain, fruit juice and honey have been used to make alcohol (ethyl alcohol or ethanol) for thousands of years. Fermented beverages existed in early Egyptian civilization, and there is evidence of an early alcoholic drink in China around 7000 B.C. In India, an alcoholic beverage called sura, distilled from rice, was in use between 3000 and 2000 B.C. The Babylonians worshiped a wine goddess as early as 2700 B.C. In Greece, one of the first alcoholic beverages to gain popularity was mead, a fermented drink made from honey and water. Greek literature is full of warnings against excessive drinking. Several Native American civilizations developed alcoholic beverages in pre-Columbian1 times.</p>
+  </div>
+  
+     
+
+
+<div class="faak">
+<iframe width="760" height="445" style="margin-left:900px; margin-top: -380px " src="https://www.youtube.com/embed/y5XEwTDlriE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="double" style="border:5px inset #28c9ac; width: 1700px; height: 550px;">
+ &nbsp&nbsp&nbsp<h3 style="font-size:40px; margin-left:25px;" letter-spacing: 2px >Origin of  Chocolate</h3>
+  <div style="width:870px; height: 350px ">  &nbsp&nbsp&nbsp  
+    <p style="font-size:23px; margin-left:25px; text-align: justify;" > The history of chocolate began in Mesoamerica. Fermented beverages made from chocolate date back to 450 BC. The Aztecs believed that cacao seeds were the gift of Quetzalcoatl, the god of wisdom, and the seeds once had so much value that they were used as a form of currency. Originally prepared only as a drink, chocolate was served as a bitter liquid, mixed with spices or corn puree. It was believed to be an aphrodisiac and to give the drinker strength. Today, such drinks are also known as "Chilate" and are made by locals in the South of Mexico. After its arrival to Europe in the sixteenth century, sugar was added to it and it became popular throughout society, first among the ruling classes and then among the common people. In the 20th century, chocolate was considered essential in the rations of United States soldiers during war.</p>
+  </div>
+  
+     
+
+
+<div class="faak">
+<iframe width="760" height="445" style="margin-left:900px; margin-top: -380px " src="https://www.youtube.com/embed/ibjUpk9Iagk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+
+<div class="double" style="border:5px inset #28c9ac; width: 1700px; height: 550px;">
+ &nbsp&nbsp&nbsp<h3 style="font-size:40px; margin-left:25px;" letter-spacing: 2px >Origin of Tea</h3>
+  <div style="width:870px; height: 350px ">  &nbsp&nbsp&nbsp  
+    <p style="font-size:23px; margin-left:25px; text-align: justify;" >The history of tea spreads across multiple cultures over the span of thousands of years. Tea drinking began as early as 1500 BC in the Yunnan Province of China. It first became known to western civilization through Portuguese priests and merchants in Lebanon during the 16th century. Drinking tea became popular in Britain during the 17th century. The British introduced tea production, as well as tea consumption, to India, in order to compete with the Chinese monopoly on tea. In one popular Chinese legend, Emperor Shennong was drinking a bowl of just boiled water because of a decree that his subjects must boil water before drinking it.[10] Some time around 2737 BC, a few leaves were blown from a nearby tree into his water, changing the color and taste. The emperor took a sip of the brew and was pleasantly surprised by its flavor and restorative properties. </p>
+  </div>
+  
+     
+
+
+<div class="faak">
+<iframe width="760" height="445" style="margin-left:900px; margin-top: -380px " src="https://www.youtube.com/embed/LaLvVc1sS20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+
+<div class="double" style="border:5px inset #28c9ac; width: 1700px; height: 550px;">
+ &nbsp&nbsp&nbsp<h3 style="font-size:40px; margin-left:25px;" letter-spacing: 2px >Origin of Cheese</h3>
+  <div style="width:870px; height: 350px ">  &nbsp&nbsp&nbsp  
+    <p style="font-size:23px; margin-left:25px; text-align: justify;" >Cheese is an ancient food whose origins predate recorded history. There is no conclusive evidence indicating where cheesemaking originated, whether in Europe, Central Asia or the Middle East, but the practice had spread within Europe prior to Roman times and, according to Pliny the Elder, had become a sophisticated enterprise by the time the Roman Empire came into being.Earliest proposed dates for the origin of cheesemaking range from around 8000 BCE, when sheep were first domesticated. Since animal skins and inflated internal organs have, since ancient times, provided storage vessels for a range of foodstuffs, it is probable that the process of cheese making was discovered accidentally by storing milk in a container made from the stomach of an animal, resulting in the milk being turned to curd and whey by the rennet from the stomach.There is a legend—with variations—about the discovery of cheese by an Arab trader who used this method of storing milk.</p>
+  </div>
+  
+     
+
+
+<div class="faak">
+<iframe width="760" height="445" style="margin-left:900px; margin-top: -380px " src="https://www.youtube.com/embed/QKae1k1BDdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<!-- ---------------------------- Weird FOOD around the WORLD ....................................... -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="section" id="section4">
+     <div class="wrap">
+       <div class="box">
+ <h3 style="font-size:40px; text-align: center; letter-spacing: 5px "><strong>Weird FOOD</strong> around the WORLD</h3>
+<br>
+<br>
+<br>
+
+<div class="row" style="justify-content: center;">
+  <div class="column">
+    <img src="wf/stink.jpg" style="width:500px; height: 400px ">
+  </div>
+  <div class="column" style="text-align: center;">
+    <h2 style="font-size: 40px">Stink Bugs</h2>
+    <div class="jaiga" style="width:580px; height: 341px; text-align: center;">
+    <p style="width:500px; height: 341px; font-size: 20px; text-align: justify;margin-left: 42px;">Species found in southern Africa serves as nutritious snack
+Stinkbugs... YUM! BUGS!  Before Encosternum delegorguei stinkbugs are cooked, their defensive stench is washed away. The bugs can become contaminated, however, with a fungus toxin when kept in reusable grain bags (left); clean ziplock bags are better.</p>
+</div>
+  </div>
+  <div class="column">
+  
+    <img src="wf/stink1.jpg" style="width:500px; height: 400px ">
+  </div>
+</div>
+<br>
+<br>
+
+<div class="row" style="justify-content: center;">
+  <div class="column">
+    <img src="wf/whiteants1.jpg" style="width:500px; height: 400px ">
+  </div>
+  <div class="column" style="text-align: center;">
+    <h2 style="font-size: 40px">White Ant Egg Soup</h2>
+     <div class="jaiga" style="width:580px; height: 341px; text-align: center;">
+    <p style="width:500px; height: 341px; font-size: 20px; text-align: justify;margin-left: 42px;">This unusual soup tastes a little like shrimp, and is made from a mixture of ant eggs and partial embryos from a white ant, in addition to a few baby ants to add a hint of sourness. You may think this unusual dish is made from a strange concoction, but this delicacy is supposedly quite tasty.</p>
+     </div>
+  </div>
+  <div class="column">
+  
+    <img src="wf/whiteants.jpg" style="width:500px; height: 400px ">
+  </div>
+</div>
+<br>
+<br>
+
+<div class="row" style="justify-content: center;">
+  <div class="column">
+    <img src="wf/tunaeyes1.jpg" style="width:500px; height: 400px ">
+  </div>
+  <div class="column" style="text-align: center;">
+    <h2 style="font-size: 40px">Tuna Eyeballs</h2>
+      <div class="jaiga" style="width:580px; height: 341px; text-align: center;">
+    <p style="width:500px; height: 341px; font-size: 20px; text-align: justify;margin-left: 42px;">At least eating khash doesn't involve eating any eyes. However, in China and Japan, a popular delicacy is a tuna eyeball, which can be found in a lot of Japanese stores for less than a dollar. Seemingly, it tastes a little like squid, you just need to boil it and then season to taste.</p>
+     </div>
+  </div>
+  <div class="column">
+  
+    <img src="wf/tunaeyes.jpg" style="width:500px; height: 400px ">
+  </div>
+</div>
+<br>
+<br>
+
+<div class="row" style="justify-content: center;">
+  <div class="column">
+    <img src="wf/odori.jpg" style="width:500px; height: 400px ">
+  </div>
+  <div class="column" style="text-align: center;">
+    <h2 style="font-size: 40px">Odori Don</h2>
+      <div class="jaiga" style="width:580px; height: 341px; text-align: center;">
+    <p style="width:500px; height: 341px; font-size: 20px; text-align: justify;margin-left: 42px;">Katsu ika odori-don is a Japanese dish consisting of a fresh squid atop either rice or noodles. Although the squid seems to be momentarily alive, the phenomenon is a result of adding soy sauce, which contains sodium chloride. An increased concentration of sodium ions cause neurons adjacent to muscles in the tentacles to fire (see action potential). Stimulation of the muscles by neurons causes an increase in the calcium concentration in muscle cells which, together with adenosine triphosphate (ATP) left in the cells posthumously, results in muscle contraction that make it seem like the squid is "dancing".
+
+</p>
+ </div>
+  </div>
+  <div class="column">
+  
+    <img src="wf/odori1.jpeg" style="width:500px; height: 400px ">
+  </div>
+</div>
+<br>
+<br>
+
+<div class="row" style="justify-content: center;">
+  <div class="column">
+    <img src="wf/hakarl.jpeg" style="width:500px; height: 400px ">
+  </div>
+  <div class="column" style="text-align: center;">
+    <h2 style="font-size: 40px">Hakarl</h2>
+       <div class="jaiga" style="width:580px; height: 341px; text-align: center;">
+    <p style="width:500px; height: 341px; font-size: 20px; text-align: justify;margin-left: 42px;">Hákarl is a national dish of Iceland consisting of a Greenland shark or other sleeper shark which has been cured with a particular fermentation process and hung to dry for four to five months. It has a strong ammonia-rich smell and fishy taste, making hákarl an acquired taste.The meat of the Greenland shark is poisonous when fresh because of its high content of urea and trimethylamine oxide. Properly processed, however, it may be consumed.The traditional method begins with gutting and beheading a shark and placing it in a shallow hole dug in gravelly sand, with the now cleaned cavity resting on a small mound of sand.</p>
+     </div>
+  </div>
+  <div class="column">
+  
+    <img src="wf/hakarl1.jpg" style="width:500px; height: 400px ">
+  </div>
+</div>
+<br>
+<br>
+
+<div class="row" style="justify-content: center;">
+  <div class="column">
+    <img src="wf/uni1.jpg" style="width:500px; height: 400px ">
+  </div>
+  <div class="column" style="text-align: center;">
+    <h2 style="font-size: 40px">Uni (Sea Urchin Gonads)</h2>
+      <div class="jaiga" style="width:580px; height: 341px; text-align: center;">
+    <p style="width:500px; height: 341px; font-size: 20px; text-align: justify;margin-left: 42px;">Uni (oo-nee) is the Japanese name for the edible part of the Sea Urchin. While colloquially referred to as the roe (eggs), uni is actually the animal's gonads (which produce the milt or roe). Uni ranges in color from rich gold to light yellow, and has a creamy consistency that some love and is off-putting to others.</p>
+     </div>
+  </div>
+  <div class="column">
+  
+    <img src="wf/uni.jpg" style="width:500px; height: 400px ">
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="row" style="justify-content: center;">
+  <div class="column">
+    <img src="wf/siklworms.jpg" style="width:500px; height: 400px ">
+  </div>
+  <div class="column" style="text-align: center;">
+    <h2 style="font-size: 40px">Sikl-Worms</h2>
+   <div class="jaiga" style="width:580px; height: 341px; text-align: center;">
+    <p style="width:500px; height: 341px; font-size: 20px; text-align: justify;margin-left: 42px;">Moreover, many insects (silkworms included) have been found to be a rich source of protein, fiber, and some vitamins and minerals. They've even been eyed as an option for a protein-rich space food for astronauts. Silkworms are also one of the only two widely domesticated insects (the other is the bee).
+In Assam, they are boiled for extracting Silk and the boiled pupae are eaten directly with salt or fried with chilli pepper or herbs as a snack or dish.
+In Korea, they are boiled and seasoned to make a popular snack food known as beondegi.
+In China, street vendors sell roasted Silkworm pupae.
+
+    </p>
+     </div>
+  </div>
+  <div class="column">
+  
+    <img src="wf/siklworms1.jpg" style="width:500px; height: 400px ">
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<div class="section" id="section5">
+ 
+
+<div class="footer">
+  <div class="footer-content">
+    <div class="row" style="justify-content: center;">
+  <div class="column" style="width: 33.33%; text-align: center;">
+    <h1 style="font-size: 45px; font-style: bold; color: black;">FoodLover</h1>
+      <p style="color: black; font-size: 20px; margin-left: 70px">Foodlover is a amusing webpage where you can learn about others culture's food. Its too tough to know all food around the world. However i represent you as much as i can.  </p>
+ 
+      
+  </div>
+  <div class="column" style="text-align: center;width: 33.33%; text-align: center;">
+   <h1 style="font-size: 45px; font-style: bold; color: black;text-align: center;">QUICK LINKS</h1>
+  <p style="font-style: italic;"> <i class="fab fa-google-plus-circle" style="color: black;font-size:28px"> &nbsp Marufnahin12@gmail.com </i></p>  
+  <p style="font-style: italic;"> <i class='fab fa-facebook' style="color: black;font-size:28px"> &nbsp Maruf Al-Razi </i></p>  
+  <p style="font-style: italic;"> <i class='fab fa-instagram' style="color: black;font-size:28px"> &nbsp Marufnahinn </i></p>  
+</div>
+  <div class="column" style="width: 33.33%">
+ <h1 style="font-size: 45px; font-style: bold; color: black;text-align: center;"> Address</h1>
+ <p style="color: black; font-size: 20px; text-align: center;">300 No. West Shewrapara Mirpur Dhaka-1216</p>
+  </div>
+</div>
+
+  </div>
+  
+  <div class="footer-bottom" style="font-size: 20px">
+   &copy; | Designed by Maruf Al-Razi (2020)
+
+  </div>
+
+
+</div>
+ </div>
+
+
+
+
+
+
+</div>
+
+
+  <div class="social">
+  <a style="text-decoration: none;" href="https://www.facebook.com/maruf.sopnilsele/"><i class="fab fa-facebook-f"></i></a>
+  <a style="text-decoration: none;" href="https://www.instagram.com/marufnahinn/"><i class="fab fa-instagram"></i></a>
+  </div>
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up" style="font-size:48px;color:red"></i></button>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+
+
+//BUTTON UPUP
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
